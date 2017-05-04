@@ -89,7 +89,7 @@ a:hover {
 #about {
 	border: 1px solid #dddddd;
 	margin: 30px 0;
-	padding: 20px;
+	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
 }
@@ -116,7 +116,7 @@ p {
 #connect {
 	text-align: center;
 	margin: 30px 0 0 35px;
-	padding: 20px 20px 30px 20px;
+	padding: 20px 25px;
 	width: 270px;
 	border: 1px solid #dddddd;
 	background: #ffffff;
@@ -153,7 +153,7 @@ h3 {
 #portfolio {
 	border: 1px solid #dddddd;
 	margin: 30px 0 100px;
-	padding: 20px;
+	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
 }
@@ -169,7 +169,7 @@ h3 {
 
 #CFHOF,
 #STP {
-	margin-left: 48px;
+	margin-left: 38px;
 }
 
 h4 {
@@ -201,14 +201,14 @@ h4 {
 	float: left;
 	border: 1px solid #dddddd;
 	margin: 30px 0 100px;
-	padding: 20px;
+	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
 }
 
 
 input[type=text], select, textarea {
-    width: 608px;
+    width: 600px;
     font-size: 16px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -261,4 +261,3 @@ footer {
 }
 
 /**footer ends**/
-
