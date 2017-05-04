@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url("C:/Users/JNegash BenchMark/Desktop/GT/Basic-Portfolio/assets/images/concrete_seamless.png");
+    overflow-y: scroll;
+}
+
+/**header begins**/
+
+header {
+    background: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom: 2px solid #cccccc;
+}
+
+h1 {
+	display: inline-block;
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 20px;
+    margin: 0 204px;
+}
+
+#tabs {
+	float: right;
+	padding: 30px 20px;
+	margin-right: 210px;
+}
+
+#About {
+	float: left;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #777777;
+	padding-right: 10px;
+}
+
+#Portfolio {
+	float: left;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #777777;
+	padding: 0px 10px 0px 10px;
+	border-left: 1px outset #dddddd;
+}
+
+#Contact {
+	float: left;
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #777777;
+	padding-left: 10px;
+	border-left: 1px outset #cccccc;
+}
+
+a {
+    color: #777777;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4aaaa5;
+    text-decoration: none;
+}
+
+/*****header ends*****/
+
+
+/**Index.html begins**/
+
+.container {
+    width: 100%;
+    display: inline-block;
+}
+
+#portfolio,
+#Contact,
+#about,
+#connect,
+#bio-image {
+    float: left;
+}
+
+#about {
+	border: 1px solid #dddddd;
+	margin: 30px 0 100px 204px;
+	padding: 20px;
+	width: 650px;
+    background: #ffffff;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size: 36px;
+	border-bottom: 2px solid #cccccc;
+	margin: 10px 0px 20px 0px;
+	padding-bottom: 20px;
+
+}
+
+#bio-image  {
+	margin-right: 20px;
+}
+
+p {
+	color: #777777;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+#connect {
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 40px;
+	padding: 20px 20px 30px 20px;
+	width: 250px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+}
+
+h3 {
+	color: #4aaaa5;
+	font-size: 24px;
+	border-bottom: 2px solid #cccccc;
+	margin: 5px 0px 20px 0px;
+	padding-bottom: 20px;
+}
+
+#image-left,
+#image-center,
+#image-right {
+    width: 60px;
+    height: 60px;
+}
+
+#image-left {
+    float: left;
+}
+
+#image-right {
+    float: right;
+}
+
+/**Index.html ends**/
+
+
+/**Portfolio.html begins**/
+
+#portfolio {
+	border: 1px solid #dddddd;
+	margin: 30px 0 100px 204px;
+	padding: 20px;
+	width: 650px;
+    background: #ffffff;
+}
+
+#SS12thS,
+#CFHOF,
+#NWAL,
+#STP {
+	float: left;
+	position: relative;
+	margin: 20px 0px;
+}
+
+#CFHOF,
+#STP {
+	margin-left: 48px;
+}
+
+h4 {
+	text-align: center;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    width: 280px;
+    margin: auto;
+    padding: 10px;
+}
+
+#portfolio-image1,
+#portfolio-image3,
+#portfolio-image2,
+#portfolio-image4 {
+    width: 280px;
+    height: 200px;
+}
+
+/**Portfolio.html ends**/
+
+
+/**Contact.html begins**/
+
+#contact {
+	float: left;
+	border: 1px solid #dddddd;
+	margin: 30px 0 100px 204px;
+	padding: 20px;
+	width: 650px;
+    background: #ffffff;
+}
+
+
+input[type=text], select, textarea {
+    width: 608px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+	font-family: sans-serif;
+	color: #777777;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    font-size: 16px;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border: 4px;
+}
+
+input[type=submit]:hover {
+	background: #777777;
+}
+
+/**Contact.html begins**/
+
+
+/**footer begins**/
+
+footer {
+	background: #666666;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	height: 78px;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: lightgrey;
+	margin: 33px;
+}
+
+/**footer ends**/
+
