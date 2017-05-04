@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: url("https://github.com/menelik7/menelik7.github.io/raw/master/assets/images/concrete_seamless.png");
+    background: url("C:/Users/JNegash BenchMark/Desktop/GT/Basic-Portfolio/assets/images/concrete_seamless.png");
     overflow-y: scroll;
 }
 
@@ -21,13 +21,13 @@ h1 {
     color: #ffffff;
     background: #4aaaa5;
     padding: 20px;
-    margin: 0 204px;
+    margin: 0 194.5px;
 }
 
 #tabs {
 	float: right;
 	padding: 30px 20px;
-	margin-right: 210px;
+	margin-right: 215px;
 }
 
 #About {
@@ -73,8 +73,9 @@ a:hover {
 /**Index.html begins**/
 
 .container {
-    width: 100%;
+    width: 960px;
     display: inline-block;
+    margin: 0px 194.5px;
 }
 
 #portfolio,
@@ -87,7 +88,7 @@ a:hover {
 
 #about {
 	border: 1px solid #dddddd;
-	margin: 30px 0 100px 204px;
+	margin: 30px 0;
 	padding: 20px;
 	width: 650px;
     background: #ffffff;
@@ -114,10 +115,9 @@ p {
 
 #connect {
 	text-align: center;
-	margin-top: 30px;
-	margin-left: 40px;
+	margin: 30px 0 0 35px;
 	padding: 20px 20px 30px 20px;
-	width: 250px;
+	width: 270px;
 	border: 1px solid #dddddd;
 	background: #ffffff;
 }
@@ -152,7 +152,7 @@ h3 {
 
 #portfolio {
 	border: 1px solid #dddddd;
-	margin: 30px 0 100px 204px;
+	margin: 30px 0 100px;
 	padding: 20px;
 	width: 650px;
     background: #ffffff;
@@ -200,7 +200,7 @@ h4 {
 #contact {
 	float: left;
 	border: 1px solid #dddddd;
-	margin: 30px 0 100px 204px;
+	margin: 30px 0 100px;
 	padding: 20px;
 	width: 650px;
     background: #ffffff;
