@@ -14,20 +14,22 @@ header {
     background: #ffffff;
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-bottom: 2px solid #cccccc;
+    padding: 0 194.5px 0 194.5px;
+    height: 78px;
 }
 
 h1 {
-	display: inline-block;
+	float: left;
     color: #ffffff;
     background: #4aaaa5;
     padding: 20px;
-    margin: 0 194.5px;
+    margin: auto;
 }
 
 #tabs {
 	float: right;
 	padding: 30px 20px;
-	margin-right: 215px;
+	margin-right: 16.17px;
 }
 
 #About {
@@ -88,7 +90,7 @@ a:hover {
 
 #about {
 	border: 1px solid #dddddd;
-	margin: 30px 0;
+	margin: 40px 0;
 	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
@@ -115,7 +117,7 @@ p {
 
 #connect {
 	text-align: center;
-	margin: 30px 0 0 35px;
+	margin: 40px 0 0 40px;
 	padding: 20px 25px;
 	width: 270px;
 	border: 1px solid #dddddd;
@@ -152,7 +154,7 @@ h3 {
 
 #portfolio {
 	border: 1px solid #dddddd;
-	margin: 30px 0 100px;
+	margin: 40px 0 100px;
 	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
@@ -200,7 +202,7 @@ h4 {
 #contact {
 	float: left;
 	border: 1px solid #dddddd;
-	margin: 30px 0 100px;
+	margin: 40px 0 100px;
 	padding: 20px 25px;
 	width: 650px;
     background: #ffffff;
@@ -261,3 +263,4 @@ footer {
 }
 
 /**footer ends**/
+
