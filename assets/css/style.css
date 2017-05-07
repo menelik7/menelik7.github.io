@@ -352,9 +352,10 @@ body {
 }
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%;
+  margin: 0 0 10px;
 }
 
 #logo {
@@ -395,14 +396,14 @@ nav a:first-child {
 .main-section {
   width: 100%;
   padding: 30px;
-  margin: 40px auto;
+  margin: 10px 0 0;
   background: #fff;
   border: 1px solid #ddd;
 }
 
 #main-container {
 	width: 90%;
-  padding-top: 130px;
+  padding-top: 0;
 }
 
 .auth-image {
@@ -414,7 +415,7 @@ nav a:first-child {
 .sidebar {
   width: 100%;
   padding: 30px;
-  margin: 20px auto;
+  margin: 30px auto;
   background: #fff;
   border: 1px solid #ddd;
 }
