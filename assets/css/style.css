@@ -421,3 +421,8 @@ nav a:first-child {
 }
 
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
