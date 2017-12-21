@@ -1,429 +1,1319 @@
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: #777;
-  background: url("../images/concrete_seamless.png");
+/* ---------------------------------------------- /*
+ * Global
+/* ---------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* general */
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-}
-
-h1,
-h2,
-h3,
 p {
-  margin-bottom: 20px;
+	color: #010440;
+	padding: 20px;
+	text-align: center;
 }
 
-p:last-child {
-  margin-bottom: 0;
+/* ---------------------------------------------- /*
+ * Header
+/* ---------------------------------------------- */
+
+#header {
+	width: 100vw;
+	background: #fff;
+	height: 80px;
+	position: fixed;
+	z-index:100;
+	border-bottom: 1px solid #f5f5f5;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
+#logo1 {
+	color: #FF530D !important;
+	font-family: 'Princess Sofia', cursive;
+	text-align: center;
+	margin-right: 20px;
+	font-weight: bold;
 }
 
-h1 {
-  padding-bottom: 20px;
-  font-size: 30px;
-  line-height: 49px;
-  border-bottom: 3px solid #ddd;
+#logo, #navbar { height: 100% }
+#logo { padding-top: 5px; padding-left: 100px; display: flex; justify-content: start; align-items: center; font-size: 1.2em}
+#navbar { padding-right: 100px; display: flex; justify-content: flex-end; align-items: center }
+#logo a { color: #010440; text-decoration: none; font-size: 30px }
+
+ul { list-style: none }
+
+li{ margin-top: 9px; float: left; padding-left: 21px }
+
+#navbar li a { color: #010440; font-size: 18px; text-decoration: none}
+#navbar li a.active { color: #FF530D; opacity:1}
+#navbar li a:hover { color: #FF530D; opacity:1; }
+
+
+/* ---------------------------------------------- /*
+ * Landing Page
+/* ---------------------------------------------- */
+
+#slide1 {
+	background: url("../img/slide1.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #f5f5f5;
 }
 
-h2,
-h3 {
-  font-size: 22px;
+#overlay {
+	background:url('../img/pattern.png');
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* header */
-
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: #fff;
-  background: #fff;
-  border-bottom: 2px solid #ccc;
+#intro-container {
+	text-align: center;
+	margin-top: 60px;
 }
 
-#logo {
-  float: left;
-  width: 290px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
+#intro {
+	font-size: 5em;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
-nav {
-  float: right;
-  margin-top: 25px;
+#initial {
+	margin-left: 10px;
+	font-family: 'Princess Sofia', cursive;
+	font-size: 1.2em;
+	color: #010440;
+	font-weight: 800;	
 }
 
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
+#hi, #im {margin-right: 20px}
+
+#job-title {
+	font-size: 2em;
+	margin-bottom: 50px;
 }
 
-nav a:first-child {
-  border-left: 0 none;
+#availability {
+	font-size: 1em;
+	margin-top: 50px;
+	color: #f5f5f5
 }
 
-/* footer */
-
-footer {
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #fff;
-  color: #ccc;
-  text-align: center;
-  background: #666;
-  border-top: 8px solid #4aaaa5;
+.fa {
+	color: #fff;
 }
 
-/* sidebar */
+/* -----------------------/*
+ *Scroll Down
+/* ---------------------- */
 
-.sidebar {
-  float: right;
-  width: 100%;
-  max-width: 270px;
-  padding: 30px;
-  margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+#intro-scroll {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+    text-align: center;
 }
 
-h3,
-.sidebar h2 {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-  border-bottom: 2px solid #eee;
+#intro-scroll span{
+    position: relative;
+    color: #fff;
+    -webkit-animation-name: drop;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
 }
 
-.social {
-  width: 62px;
-  height: 62px;
-  margin-top: 8px;
-  margin-right: 5px;
+@-webkit-keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
 }
 
-.social:last-child {
-  margin-right: 0;
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+/* ---------------------------------------------- /*
+ * About
+/* ---------------------------------------------- */
+
+#slide2{
+	color: #010440;
+	margin: 0 auto;
+	padding: 100px 0;
 }
 
-/* main */
-
-#main-container {
-  padding-top: 130px;
+#about {
+	text-align: center;
+	margin: 20px 0;
+	display: block;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
 }
 
-.main-section {
-  float: left;
-  width: 100%;
-  max-width: 650px;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: #fff;
-  border: 1px solid #ddd;
+#story, #passion { min-height: 450px; font-size: 18px; padding-top: 40px }
+
+#story {
+	border-right: 1px solid #f5f5f5;
 }
 
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
+#story-logo,
+#passion-logo {
+	height: 120px;
+	text-align: center;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
+.fa-address-card-o, .fa-file-code-o {
+	color: #FF530D;
+	font-size: 60px;
 }
 
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-  border: 1px solid #ddd;
+#story-para,
+#passion-para {
+	min-height: 250px;
 }
 
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
+#about-hr {
+	width: 200px;
+	margin: 20px auto;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+/* ---------------------------------------------- /*
+ * Filler Picture 1
+/* ---------------------------------------------- */
+
+#filler-pic1 {
+	position: relative;
+	height: 350px;
+	margin: 0 -15px;
+	background: url("../img/dustin-lee-19667.jpg") no-repeat center top; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-/* contact page */
+/* ---------------------------------------------- /*
+ * Porfolio
+/* ---------------------------------------------- */
 
-#contact-form ul {
-  margin-bottom: 20px;
+#slide3{
+	color: #010440;
+	padding: 100px 0;
 }
 
-#contact-form li {
-  margin-bottom: 10px;
+#project {
+	text-align: center;
+	margin: 20px 0;
+	display: block;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
 }
 
-label,
-input[type=text],
-input[type=email],
-textarea {
-  display: block;
-  width: 100%;
+#outcome-icon2 {
+	display: none;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-input[type=text],
-input[type=email],
-textarea {
-  height: 35px;
-  padding: 0 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
+#outcome-icon1 {
+	vertical-align: middle;
+	font-size: 60px;
+	margin-left: 20px;
+	margin-top: -10px;
+	color: #FF530D;
 }
 
-textarea {
-  height: 200px;
+#project-hr {
+	width: 100px;
+	margin-bottom: 40px;
 }
 
-input[type=submit] {
-  padding: 10px 30px;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  background: #4aaaa5;
-  border: 0 none;
+#myCarousel {
+	height: 450px;
+	overflow: hidden;
 }
 
-/*--------------------------------------*Media Query*--------------------------------------------*/
 
-@media screen and (max-width: 980px) {
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
 
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: #777;
-  background: url("../images/concrete_seamless.png");
+#slide4{
+	background-color: #f5f5f5;
+	color: #010440;
+	padding: 100px 20px 0 20px;
+	margin-bottom: 0;
 }
 
-* {
-  box-sizing: border-box;
+#contact {
+	text-align: center;
+	margin: 20px 0;
+	display: block;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
 }
 
-.container {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+#chat-row {
+	margin-bottom: 150px;
 }
 
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
+#chat-hr {
+	width: 100px;
+	margin-bottom: 20px;
 }
 
-.main-section {
-  float: left;
-  width: 54%;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: #fff;
-  border: 1px solid #ddd;
+#chat-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#main-container {
-  padding-top: 130px;
+#name, #email, #message { color: #010440; }
+textarea.form-control {
+	height: 300px;
+	resize: none;
 }
 
-.auth-image {
-  width: 310px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 25px;
+    font-size: 13px;
+    background: #010440;
+    color: #fff;
 }
 
+#send:hover {
+	color: #fff;
+	font-weight: bold;
+	background: #FF530D;
 }
 
-@media screen and (max-width: 768px) {
+/* ---------------------------------------------- /*
+ * Filler Picture 2
+/* ---------------------------------------------- */
 
-body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
-  color: #777;
-  background: url("../images/concrete_seamless.png");
+#filler-pic2 {
+	height: 600px;
+	margin: 0 -15px;
+	background: url("../img/chris-karidis-313612.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-* {
-  box-sizing: border-box;
+/* ---------------------------------------------- /*
+ * Skills
+/* ---------------------------------------------- */
+
+#slide5{
+	color: #fff;
+	background: #010A26;
+	padding: 110px 0 0 0;
+	background-size: cover;
+	margin-bottom: 0;
 }
 
-.container {
-  width: 96%;
-  margin: auto;
+#tools,
+#skills {
+	color: #FF530D;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
 }
 
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
+#skills {
+	margin-bottom: 0;
 }
 
-.main-section {
-  clear: both;
-  width: 100%;
-  max-width: 700px;
-  padding: 30px;
-  background: #fff;
-  border: 1px solid #ddd;
+.technologies {
+	color: #fff;
+	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: normal;
 }
 
-#main-container {
-  padding-top: 130px;
+#chat-row {
+	margin: 20px 0 100px 0;
+}
+.chart {
+    display: inline-block;
+    height: 140px;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+.chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
-.auth-image {
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
+.text-center {
+	font-size: 18px;
+	margin-bottom: 20px;
 }
 
-.sidebar {
-  width: 100%;
-  max-width: 728px;
-  padding: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+.percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+}
+.percent:after {
+    content: "%";
+    font-size: 50%;
+    margin-left: 0.1em;
 }
 
+#tools-hr,
+#skills-hr {
+	width: 50px;
+	margin: 20px auto;
+	opacity: .5;
 }
 
-@media screen and (max-width: 640px) {
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+#footer {
+	color: #fff;
+	background: #010A26;
+	background-size: cover;
+	padding-bottom: 10px;
 }
 
-#masthead {
-  position: static;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 10px;
+#social {
+	min-height: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 
-#logo {
-  
-  width: 100%;
-  height: 66%;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
+#social ul {
+	padding-left: 0;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-  margin: auto;
-  text-align: center;
+#social ul li:first-child {
+	padding-left: 0;
 }
 
-nav a {
-  width: 30%;
-  padding: 0;
-  margin: 20px auto;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
+#social-icons {
+	font-size: 30px;
+	color: #fff;
 }
 
-nav a:first-child {
-  border-left: 0 none;
+.fa-stack-overflow {
+	margin-top: -2px;
 }
 
-.main-section {
-  width: 100%;
-  padding: 30px;
-  margin: 10px 0 0;
-  background: #fff;
-  border: 1px solid #ddd;
+.fa-twitter {
+	padding-top: 2px;
 }
 
-#main-container {
-	width: 90%;
-  padding-top: 0;
+#copyright {
+	height: 30px;
+	text-align: right;
+	border-right: 1px solid #FF530D;
+	padding: 3px 20px;
 }
 
-.auth-image {
-  width: 98%;
-  height: auto;
-  margin-top: 10px;
+#copyright-text {
+	margin-right: 2px;
 }
 
-.sidebar {
-  width: 100%;
-  padding: 30px;
-  margin: 30px auto;
-  background: #fff;
-  border: 1px solid #ddd;
+#picture-credit {
+	height: 30px;
 }
+
+
+/*******************************************Media Queries************************************************/
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 1124px) {
+
+	/* ---------------------------------------------- /*
+	 * Global
+	/* ---------------------------------------------- */
+	
+
+	/* ---------------------------------------------- /*
+	 * Header
+	/* ---------------------------------------------- */
+
+	#logo1 {
+		font-size: 1em;
+		text-align: center;
+		margin-right: 10px;
+	}
+
+	#logo, #navbar { height: 100% }
+	#logo { padding: 0 0 0 50px; display: flex; justify-content: flex-start; align-items: center }
+	#navbar { padding: 5px 50px 5px 0; display: flex; justify-content: flex-end; align-items: center }
+	#logo a { color: #010440; text-decoration: none; font-size: 30px }
+
+	ul { list-style: none; padding-left: 0 }
+
+	li{ margin-top: 9px; float: left; padding-left: 21px }
+
+	#navbar li a { color: #010440; font-size: 16px; text-decoration: none}
+	#navbar li a.active { color: #FF530D; opacity:1}
+	#navbar li a:hover { color: #FF530D; opacity:1; }
+
+
+	/* ---------------------------------------------- /*
+	 * Landing Page
+	/* ---------------------------------------------- */
+	
+	#intro-container {
+		margin-top: -100px;
+	}
+
+	#intro {
+		font-size: 4.2em;
+		margin-bottom: 100px;
+	}
+
+	#job-title {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	#availability {
+		padding-top: 0;
+		font-size: 1em;
+		margin-top: 100px;
+		margin-bottom: -100px;
+	}
+	
+	#intro-scroll {
+		margin-bottom: 50px;
+	}
+
+	/* ---------------------------------------------- /*
+	 * About
+	/* ---------------------------------------------- */
+
+	#slide2{
+		background-color: #fff;
+		color: #010440;
+		margin: 0 auto;
+		padding: 80px 0;
+	}
+	
+	#about {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	#story, #passion { min-height: 350px; font-size: 18px; padding-top: 40px }
+	#story {
+		border-right: none;
+	}
+
+	#story {
+		border-right: 1px solid #f5f5f5;
+	}
+
+	#story-logo,
+	#passion-logo {
+		text-align: center;
+	}
+	
+	#story-para,
+	#passion-para {
+		min-height: 350px;
+	}
+
+	.material-icons {
+		font-size: 40px;
+	}
+
+	hr {
+		width: 100px;
+		margin: 0 auto;
+	}
+	/* ---------------------------------------------- /*
+	 * Porfolio
+	/* ---------------------------------------------- */
+
+	#slide3{
+		color: #010440;
+		padding: 80px 0;
+		background-size: cover;
+	}
+
+	#project {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	/*#portfolio-cards {
+		padding: 0;
+		margin-right: 50px;
+		margin-bottom: 30px;
+		border: 0;
+	}
+
+	#card-div {
+		padding-bottom: 20px;
+	}*/
+
+	/* ---------------------------------------------- /*
+	 * Contact
+	/* ---------------------------------------------- */
+
+	#slide4{
+		background-color: #f5f5f5;
+		color: #010440;
+		padding: 80px 0;
+	}
+	
+	#contact {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	#chat-hr {
+		width: 100px;
+		margin-bottom: 15px;
+	}
+	/* ---------------------------------------------- /*
+	 * Skills
+	/* ---------------------------------------------- */
+
+	#slide5{
+		padding: 80px 0 0 0;
+	}
+	
+	#tools,
+	#skills {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+	
+	#skills {
+		margin-bottom: 0;
+	}
+
+	.technologies {
+		font-family: Raleway, "Times New Roman", Times, sans-serif;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.chart {
+	    display: inline-block;
+	    height: 140px;
+	    margin: 30px 0;
+	    position: relative;
+	    text-align: center;
+	    width: 140px;
+	}
+	.chart canvas {
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	}
+
+	.text-center {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.percent {
+	    display: inline-block;
+	    font-size: 25px;
+	    font-weight: 300;
+	    line-height: 140px;
+	    z-index: 2;
+	}
+	.percent:after {
+	    content: "%";
+	    font-size: 50%;
+	    margin-left: 0.1em;
+	}
+	
+	#tools-hr,
+	#skills-hr {
+		color: #FF530D;
+		width: 50px;
+		margin: 20px auto;
+		opacity: .5;
+	}
+	
+	/* ---------------------------------------------- /*
+	 * Footer
+	/* ---------------------------------------------- */
+
+	#footer {
+		color: #C7C7C7;
+		background: #010A26;
+		background-size: cover;
+	}
+
+	#copyright {
+		height: 30px;
+		text-align: right;
+		padding: 3px 20px;
+	}
+
+	#picture-credit {
+		height: 30px;
+	}  
 
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+
+/* Small devices (landscape phones, less than 769px)*/
+@media (max-width: 768px) {
+	
+	/* ---------------------------------------------- /*
+	 * Global
+	/* ---------------------------------------------- */
+	
+
+	/* ---------------------------------------------- /*
+	 * Header
+	/* ---------------------------------------------- */
+
+	#logo1 {
+		font-size: .8em;
+		text-align: center;
+		margin-right: 10px;
+	}
+
+	#logo, #navbar { height: 100% }
+	#logo { padding: 0 0 0 1px; margin-left: 40px; margin-right: -80px; display: flex; justify-content: flex-start; align-items: center }
+	#navbar { padding: 13px 1px 10px 0; display: flex; justify-content: flex-end; align-items: center }
+	#logo a { color: #010440; text-decoration: none; font-size: 22px }
+
+	ul { list-style: none; padding-left: 0 }
+
+	li{ margin-top: 9px; float: left; padding-left: 21px }
+
+	#navbar li a { color: #010440; font-size: 14px; text-decoration: none}
+	#navbar li a.active { color: #FF530D; opacity:1}
+	#navbar li a:hover { color: #FF530D; opacity:1; }
+
+
+	/* ---------------------------------------------- /*
+	 * Landing Page
+	/* ---------------------------------------------- */
+	
+	#intro-container {
+		margin-top: 0;
+	}
+
+	#intro {
+		font-size: 3em;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	#job-title {
+		font-size: 1.5em;
+	}
+
+	#availability {
+		padding-top: 0;
+		font-size: .8em;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#intro-scroll {
+		margin-bottom: 0;
+	}
+
+	/* ---------------------------------------------- /*
+	 * About
+	/* ---------------------------------------------- */
+
+	#slide2{
+		background-color: #fff;
+		color: #010440;
+		margin: 0 auto;
+		padding: 100px 0 0 0;
+	}
+	
+	#about {
+		text-align: center;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	#story, #passion { min-height: 350px; font-size: 18px; padding-top: 0 }
+	#story {
+		border-right: none;
+	}
+
+	#story-logo,
+	#passion-logo {
+		text-align: center;
+	}
+	
+	#story-para,
+	#passion-para {
+		min-height: auto;
+		border: 1px solid #f5f5f5;
+	}
+
+	#about-hr {
+		visibility: hidden;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Filler Picture 1
+	/* ---------------------------------------------- */
+
+	#filler-pic1 {
+		position: relative;
+		bottom: -40px;
+		height: 300px;
+		margin: 0 -15px;
+		background: url("../img/dustin-lee-19667.jpg") no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Porfolio
+	/* ---------------------------------------------- */
+
+	#slide3{
+		background-color: #fff;
+		color: #010440;
+		padding: 120px 0 100px 0;
+		background-size: cover;
+	}
+	
+	#project {
+		font-size: 2em;
+		margin-top: 20px;
+		text-align: center;
+		margin-top: 0;	
+	}
+	
+	#outcome-icon1 {
+		vertical-align: middle;
+		font-size: 60px;
+		margin-left: 20px;
+		margin-top: -10px;
+		color: #FF530D;
+	}
+
+	#project-hr {
+		margin-bottom: 30px;
+	}
+	
+	#myCarousel {
+		height: auto;
+		overflow: hidden;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Contact
+	/* ---------------------------------------------- */
+
+	#slide4{
+		background-color: #f5f5f5;
+		color: #010440;
+		padding: 100px 0 0 0;
+	}
+	
+	#contact {
+		text-align: center;
+		display: block;
+		font-size: 2em;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	#chat-hr {
+		width: 100px;
+	}
+
+	textarea.form-control {
+		height: 100px;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Filler Picture 2
+	/* ---------------------------------------------- */
+
+	#filler-pic2 {
+		height: 300px;
+		margin: 0 -15px;
+		background: url("../img/chris-karidis-313612.jpg") no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Skills
+	/* ---------------------------------------------- */
+
+	#slide5{
+		padding: 100px 0 0 0;
+	}
+	
+	#tools,
+	#skills {
+		text-align: center;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+	
+	#skills {
+		margin-bottom: 0;
+	}
+
+	.technologies {
+		font-family: Raleway, "Times New Roman", Times, sans-serif;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.chart {
+	    display: inline-block;
+	    height: 140px;
+	    margin: 30px 0;
+	    position: relative;
+	    text-align: center;
+	    width: 140px;
+	}
+	.chart canvas {
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	}
+
+	.text-center {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.percent {
+	    display: inline-block;
+	    font-size: 25px;
+	    font-weight: 300;
+	    line-height: 140px;
+	    z-index: 2;
+	}
+	.percent:after {
+	    content: "%";
+	    font-size: 50%;
+	    margin-left: 0.1em;
+	}
+	#tools-hr,
+	#skills-hr {
+		color: #FF530D;
+		width: 50px;
+		margin: 20px auto;
+		opacity: .5;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Footer
+	/* ---------------------------------------------- */
+
+	#footer {
+		color: #fff;
+		background: #010A26;
+		background-size: cover;
+	}
+	
+	#social-icons {
+		font-size: 24px;
+	}
+
+	#copyright {
+		height: 30px;
+		text-align: right;
+		padding: 3px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	
+	#copyright-text {
+		margin-right: 4px;
+	}
+
+	#picture-credit {
+		height: 30px;
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+	} 
+	
+	#elena {
+		margin-right: 5px;
+	}
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+	
+	/* ---------------------------------------------- /*
+	 * Global
+	/* ---------------------------------------------- */
+
+	/* ---------------------------------------------- /*
+	 * Header
+	/* ---------------------------------------------- */
+	#header {
+		height: 120px;
+		position: fixed;
+		z-index:100;
+		border-bottom: 1px solid #f5f5f5;
+	}
+	#intro {
+		margin-bottom: 100px;
+	}
+
+	#logo1 {
+		font-size: 1em;
+		text-align: center;
+		margin-right: 8px;
+	}
+	
+	#initial {
+		margin-left: 0;	
+	}
+
+	#logo, #navbar { height: 50%; padding: 0; display: flex; justify-content: center; align-items: center }
+	#logo { width: 100%; padding-top: 5px; margin-left: 0; margin-right: 0 }
+	#navbar { padding-bottom: 10px; width: 100%; background: #fff; border-bottom: 1px solid #f5f5f5 }
+	#logo a { color: #010440; text-decoration: none; font-size: 26px }
+	
+	ul { list-style: none; padding: 0 }
+	li:first-child { padding: 0 }
+
+	li{ margin-top: 10px; float: left; padding-left: 21px }
+
+	#navbar li a { color: #010440; font-size: 16px; text-decoration: none}
+	#navbar li a.active { color: #FF530D; opacity:1}
+	#navbar li a:hover { color: #FF530D; opacity:1; }
+
+
+	/* ---------------------------------------------- /*
+	 * Landing Page
+	/* ---------------------------------------------- */
+
+	#intro {
+		font-size: 1.8em;
+		margin-top: 0;
+	}
+
+	#job-title {
+		font-size: 1.3em;
+	}
+
+	#availability {
+		margin-top: 90px;
+		font-size: .7em;
+	}
+	
+	#intro-scroll {
+		margin-bottom: 50px;
+	}
+
+	/* ---------------------------------------------- /*
+	 * About
+	/* ---------------------------------------------- */
+
+	#slide2{
+		background-color: #fff;
+		color: #010440;
+		margin: 0 auto;
+		padding: 140px 0 0 0;
+	}
+	
+	#about {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 0;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	#story, #passion { min-height: 350px; font-size: 18px; padding-top: 20px }
+	#story {
+		border-right: none;
+	}
+
+	#story-logo,
+	#passion-logo {
+		text-align: center;
+	}
+	
+	/* ---------------------------------------------- /*
+	 * Filler Picture 1
+	/* ---------------------------------------------- */
+
+	#filler-pic1 {
+		bottom: -50px;
+	}
+
+	/* ---------------------------------------------- /*
+	 * Porfolio
+	/* ---------------------------------------------- */
+
+	#slide3{
+		background-color: #fff;
+		color: #010440;
+		padding: 140px 0 0 0;
+		background-size: cover;
+	}
+	
+	#project {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	#outcome-icon1 {
+		display: none;
+	}
+
+	#outcome-icon2 {
+		display: inherit;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	#project-hr {
+		margin-bottom: 30px;
+	}
+	
+	#business_center {
+		vertical-align: middle;
+		font-size: 60px;
+		margin-left: 10px;
+		color: #FF530D;
+	}
+
+	#portfolio-cards {
+		padding: 15px !important;
+	}
+
+	.right {
+		color: #010440;
+	}
+	
+	#card-div {
+		padding-bottom: 20px;
+	}
+	
+	#card-content {
+		font-size: 18px;
+	}
+	/* ---------------------------------------------- /*
+	 * Contact
+	/* ---------------------------------------------- */
+
+	#slide4{
+		background-color: #fff;
+		color: #010440;
+		padding: 140px 0 0 0;
+	}
+	
+	#contact {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 0;
+		display: block;
+		font-size: 2em;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+
+	textarea.form-control {
+		height: 280px;
+	}
+	/* ---------------------------------------------- /*
+	 * Skills
+	/* ---------------------------------------------- */
+
+	#slide5{
+		padding: 140px 0 0 0;
+	}
+	
+	#tools,
+	#skills {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 0;
+		display: block;
+		font-size: 30px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 5px;
+	}
+	
+	#skills {
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
+
+	.technologies {
+		font-family: Raleway, "Times New Roman", Times, sans-serif;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.chart {
+	    display: inline-block;
+	    height: 140px;
+	    margin: 30px 0;
+	    position: relative;
+	    text-align: center;
+	    width: 140px;
+	}
+	.chart canvas {
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	}
+
+	.text-center {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.percent {
+	    display: inline-block;
+	    font-size: 25px;
+	    font-weight: 300;
+	    line-height: 140px;
+	    z-index: 2;
+	}
+	.percent:after {
+	    content: "%";
+	    font-size: 50%;
+	    margin-left: 0.1em;
+	}
+	#tools-hr,
+	#skills-hr {
+		color: #FF530D;
+		width: 50px;
+		margin: 20px auto;
+		opacity: .5;
+	}
+	
+	/* ---------------------------------------------- /*
+	 * Footer
+	/* ---------------------------------------------- */
+
+	#footer {
+		min-height: 100px;
+		color: #fff;
+		background: #010A26;
+		background-size: cover;
+	}
+	
+	#copyright-text {
+		display: none;
+	}
+
+	#elena {
+		display: none;
+	}
+
+	#copyright {
+		text-align: left;
+		font-size: .8em;
+		height: 30px;
+		padding: 10px 10px 10px 22px;
+	}
+
+	#picture-credit {
+		font-size: .8em;
+		display: inline-flex;
+		align-items: center;
+		padding-left: 10px;
+	}
+
 }
