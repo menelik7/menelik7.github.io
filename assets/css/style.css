@@ -828,7 +828,7 @@ textarea.form-control {
 	}
 
 	#about-hr {
-		visibility: hidden;
+		display: none;
 	}
 
 	/* ---------------------------------------------- /*
