@@ -327,7 +327,7 @@ li {
 
 .card-content {
 	background: #263d62;
-	padding-bottom: 30px !important;
+	padding-bottom: 50px !important;
 }
 
 .card-content i,
@@ -336,7 +336,7 @@ li {
 }
 
 .card-content p {
-	padding: 0 20px 20px 0;
+	padding: 0;
 	text-align: left;
 }
 
@@ -356,6 +356,10 @@ li {
 
 .card-reveal ul li {
 	padding: 0;
+}
+
+#reveal {
+	font-size: 20px;
 }
 
 /* ---------------------------------------------- /*
