@@ -1,13 +1,7 @@
 /* ---------------------------------------------- /*
  * Global
 /* ---------------------------------------------- */
-@import url(
-	https://fonts.googleapis.com/css?family=Raleway:400,
-	300,
-	500,
-	700,
-	800
-);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 
 body {
 	margin: 0;
@@ -309,10 +303,7 @@ li {
 }
 
 #outcome-icon1 {
-	vertical-align: middle;
 	font-size: 60px;
-	margin-left: 20px;
-	margin-top: -10px;
 	color: #ff530d;
 }
 
@@ -385,7 +376,6 @@ li {
 
 #contact {
 	text-align: center;
-	margin: 20px 0;
 	display: block;
 	font-size: 30px;
 	font-weight: 800;
@@ -399,7 +389,7 @@ li {
 
 #chat-hr {
 	width: 100px;
-	margin-bottom: 20px;
+	margin: 20px auto;
 }
 
 #chat-row {
@@ -534,6 +524,7 @@ textarea.form-control {
 	background: #010a26;
 	background-size: cover;
 	padding-bottom: 10px;
+	margin-bottom: 0;
 }
 
 #social {
@@ -762,7 +753,6 @@ textarea.form-control {
 	#contact {
 		text-align: center;
 		margin-top: 20px;
-		margin-bottom: 20px;
 		display: block;
 		font-size: 30px;
 		font-weight: 800;
@@ -1042,10 +1032,7 @@ textarea.form-control {
 	}
 
 	#outcome-icon1 {
-		vertical-align: middle;
 		font-size: 60px;
-		margin-left: 20px;
-		margin-top: -10px;
 		color: #ff530d;
 	}
 
@@ -1388,14 +1375,11 @@ textarea.form-control {
 		margin-bottom: 20px;
 	}
 
-	#outcome-icon1 {
-		display: none;
-	}
-
-	#outcome-icon2 {
-		display: inherit;
-		text-align: center;
-		margin-bottom: 50px;
+	#business-icon-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
 	}
 
 	#project-hr {
@@ -1436,7 +1420,6 @@ textarea.form-control {
 
 	#contact {
 		text-align: center;
-		margin-bottom: 20px;
 		margin-top: 0;
 		display: block;
 		font-size: 2em;
