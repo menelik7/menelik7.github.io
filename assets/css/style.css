@@ -1,7 +1,13 @@
 /* ---------------------------------------------- /*
  * Global
 /* ---------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+@import url(
+	https://fonts.googleapis.com/css?family=Raleway:400,
+	300,
+	500,
+	700,
+	800
+);
 
 body {
 	margin: 0;
@@ -14,6 +20,10 @@ p {
 	color: #010440;
 	padding: 20px;
 	text-align: center;
+}
+
+.row {
+	margin-bottom: 0;
 }
 
 /* ---------------------------------------------- /*
@@ -283,7 +293,14 @@ li {
 
 #slide3 {
 	color: #010440;
-	padding: 80px 0;
+	padding: 80px 0 20px 0;
+}
+
+#business-icon-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 #project {
@@ -310,6 +327,14 @@ li {
 #project-hr {
 	width: 100px;
 	margin-bottom: 40px;
+}
+
+#card-div {
+	margin-bottom: 30px;
+}
+
+.card {
+	margin-top: 0 !important;
 }
 
 .card-content {
@@ -725,7 +750,7 @@ textarea.form-control {
 
 	#slide3 {
 		color: #010440;
-		padding: 80px 0;
+		padding: 80px 0 20px 0;
 		background-size: cover;
 	}
 
@@ -1020,7 +1045,7 @@ textarea.form-control {
 	#slide3 {
 		background-color: #fff;
 		color: #010440;
-		padding: 120px 0 100px 0;
+		padding: 120px 0 20px 0;
 		background-size: cover;
 	}
 
@@ -1375,13 +1400,6 @@ textarea.form-control {
 		margin-bottom: 20px;
 	}
 
-	#business-icon-div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 20px;
-	}
-
 	#project-hr {
 		margin-bottom: 30px;
 	}
@@ -1399,10 +1417,6 @@ textarea.form-control {
 
 	.right {
 		color: #010440;
-	}
-
-	#card-div {
-		padding-bottom: 20px;
 	}
 
 	#card-content {
