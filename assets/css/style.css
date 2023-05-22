@@ -4,20 +4,20 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
-	color: #010440;
-	padding: 20px;
-	text-align: center;
+  color: #010440;
+  padding: 20px;
+  text-align: center;
 }
 
 .row {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* ---------------------------------------------- /*
@@ -25,64 +25,64 @@ p {
 /* ---------------------------------------------- */
 
 #header {
-	width: 100vw;
-	background: #fff;
-	height: 80px;
-	position: fixed;
-	z-index: 100;
-	border-bottom: 1px solid #f5f5f5;
+  width: 100vw;
+  background: #fff;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 #logo1 {
-	color: #ff530d !important;
-	font-family: "Princess Sofia", cursive;
-	text-align: center;
-	margin-right: 20px;
-	font-weight: bold;
+  color: #ff530d !important;
+  font-family: 'Princess Sofia', cursive;
+  text-align: center;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
 #logo,
 #navbar {
-	height: 100%;
+  height: 100%;
 }
 #logo {
-	padding-top: 5px;
-	padding-left: 100px;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	font-size: 1.2em;
+  padding-top: 5px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.2em;
 }
 #navbar {
-	padding-right: 100px;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  padding-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 #logo a {
-	color: #010440;
-	text-decoration: none;
-	font-size: 30px;
+  color: #010440;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 li {
-	margin-top: 9px;
-	float: left;
-	padding-left: 21px;
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
 }
 
 #navbar li a {
-	color: #010440;
-	font-size: 18px;
-	text-decoration: none;
+  color: #010440;
+  font-size: 18px;
+  text-decoration: none;
 }
 #navbar li a.active {
-	color: #ff530d;
-	opacity: 1;
+  color: #ff530d;
+  opacity: 1;
 }
 #navbar li a:hover {
-	color: #ff530d;
-	opacity: 1;
+  color: #ff530d;
+  opacity: 1;
 }
 
 /* ---------------------------------------------- /*
@@ -90,59 +90,59 @@ li {
 /* ---------------------------------------------- */
 
 #slide1 {
-	background: url("../img/slide1.jpg") no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: #f5f5f5;
+  background: url('../img/slide1.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f5f5f5;
 }
 
 #overlay {
-	background: url("../img/pattern.png");
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background: url('../img/pattern.png');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #intro-container {
-	text-align: center;
-	margin-top: 60px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 #intro {
-	font-size: 5em;
-	margin-top: 50px;
-	margin-bottom: 90px;
+  font-size: 5em;
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
 
 #initial {
-	margin-left: 10px;
-	font-family: "Princess Sofia", cursive;
-	font-size: 1.2em;
-	color: #010440;
-	font-weight: 800;
+  margin-left: 10px;
+  font-family: 'Princess Sofia', cursive;
+  font-size: 1.2em;
+  color: #010440;
+  font-weight: 800;
 }
 
 #hi,
 #im {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
 #job-title {
-	font-size: 2em;
-	margin-bottom: 50px;
+  font-size: 2em;
+  margin-bottom: 50px;
 }
 
 #availability {
-	font-size: 1em;
-	margin-top: 20px;
-	color: #f5f5f5;
+  font-size: 1em;
+  margin-top: 20px;
+  color: #f5f5f5;
 }
 
 .fa {
-	color: #fff;
+  color: #fff;
 }
 
 /* -----------------------/*
@@ -150,116 +150,117 @@ li {
 /* ---------------------- */
 
 #intro-scroll {
-	position: absolute;
-	left: 50%;
-	bottom: 40px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	margin-left: -15px;
-	display: block;
-	z-index: 10;
-	text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -15px;
+  display: block;
+  z-index: 10;
+  text-align: center;
 }
 
 #intro-scroll span {
-	position: relative;
-	color: #fff;
-	-webkit-animation-name: drop;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 0s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-play-state: running;
-	animation-name: drop;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-play-state: running;
+  position: relative;
+  color: #fff;
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 @-webkit-keyframes drop {
-	0% {
-		top: 0px;
-		opacity: 0;
-	}
-	30% {
-		top: 10px;
-		opacity: 1;
-	}
-	100% {
-		top: 25px;
-		opacity: 0;
-	}
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
 }
 
 @keyframes drop {
-	0% {
-		top: 0px;
-		opacity: 0;
-	}
-	30% {
-		top: 10px;
-		opacity: 1;
-	}
-	100% {
-		top: 25px;
-		opacity: 0;
-	}
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
 }
 /* ---------------------------------------------- /*
  * About
 /* ---------------------------------------------- */
 
 #slide2 {
-	color: #010440;
-	margin: 0 auto;
-	padding: 80px 0;
+  color: #010440;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
 #about {
-	text-align: center;
-	margin: 20px 0;
-	display: block;
-	font-size: 30px;
-	font-weight: 800;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 5px;
+  text-align: center;
+  margin: 20px 0;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
 }
 
 #story,
 #passion {
-	min-height: 450px;
-	font-size: 18px;
-	padding-top: 40px;
+  min-height: 450px;
+  font-size: 18px;
+  padding-top: 40px;
 }
 
 #story {
-	border-right: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
 }
 
 #story-logo,
 #passion-logo {
-	height: 120px;
-	text-align: center;
+  height: 120px;
+  text-align: center;
 }
 
 .fa-address-card-o,
 .fa-file-code-o {
-	color: #ff530d;
-	font-size: 60px;
+  color: #ff530d;
+  font-size: 60px;
 }
 
 #story-para,
 #passion-para {
-	min-height: 250px;
+  min-height: 250px;
+  text-align: left !important;
 }
 
 #about-hr {
-	width: 200px;
-	margin: 20px auto;
+  width: 200px;
+  margin: 20px auto;
 }
 
 /* ---------------------------------------------- /*
@@ -267,14 +268,14 @@ li {
 /* ---------------------------------------------- */
 
 #filler-pic1 {
-	position: relative;
-	height: 350px;
-	margin: 0 -15px;
-	background: url("../img/dustin-lee-19667.jpg") no-repeat center top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  position: relative;
+  height: 350px;
+  margin: 0 -15px;
+  background: url('../img/dustin-lee-19667.jpg') no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* ---------------------------------------------- /*
@@ -282,86 +283,86 @@ li {
 /* ---------------------------------------------- */
 
 #slide3 {
-	color: #010440;
-	padding: 80px 0 20px 0;
+  color: #010440;
+  padding: 80px 0 20px 0;
 }
 
 #business-icon-div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #project {
-	text-align: center;
-	margin: 20px 0;
-	display: block;
-	font-size: 30px;
-	font-weight: 800;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 5px;
+  text-align: center;
+  margin: 20px 0;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
 }
 
 #outcome-icon2 {
-	display: none;
-	text-align: center;
-	margin-bottom: 20px;
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #outcome-icon1 {
-	font-size: 60px;
-	color: #ff530d;
+  font-size: 60px;
+  color: #ff530d;
 }
 
 #project-hr {
-	width: 100px;
-	margin-bottom: 40px;
+  width: 100px;
+  margin-bottom: 40px;
 }
 
 #card-div {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .card {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .card-content {
-	background: #263d62;
-	padding-bottom: 50px !important;
+  background: #263d62;
+  padding-bottom: 50px !important;
 }
 
 .card-content i,
 .card-content p {
-	color: #fff !important;
+  color: #fff !important;
 }
 
 .card-content p {
-	padding: 0;
-	text-align: left;
+  padding: 0;
+  text-align: left;
 }
 
 .card-title {
-	color: #fff;
-	font-weight: bold !important;
+  color: #fff;
+  font-weight: bold !important;
 }
 
 #explore {
-	font-size: 30px;
-	margin: 10px 0;
+  font-size: 30px;
+  margin: 10px 0;
 }
 
 .card-reveal .card-title {
-	color: #263d62 !important;
+  color: #263d62 !important;
 }
 
 .card-reveal ul li {
-	padding: 0;
+  padding: 0;
 }
 
 #reveal {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /* ---------------------------------------------- /*
@@ -369,13 +370,13 @@ li {
 /* ---------------------------------------------- */
 
 #filler-pic2 {
-	height: 300px;
-	margin: 0 -15px;
-	background: url("../img/chat.jpg") no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  height: 300px;
+  margin: 0 -15px;
+  background: url('../img/chat.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* ---------------------------------------------- /*
@@ -383,58 +384,58 @@ li {
 /* ---------------------------------------------- */
 
 #slide4 {
-	background-color: #f5f5f5;
-	color: #010440;
-	padding: 80px 20px 0 20px;
-	margin-bottom: 0;
+  background-color: #f5f5f5;
+  color: #010440;
+  padding: 80px 20px 0 20px;
+  margin-bottom: 0;
 }
 
 #contact {
-	text-align: center;
-	display: block;
-	font-size: 30px;
-	font-weight: 800;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 5px;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
 }
 
 #chat-row {
-	margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 #chat-hr {
-	width: 100px;
-	margin: 20px auto;
+  width: 100px;
+  margin: 20px auto;
 }
 
 #chat-row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #name,
 #email,
 #message {
-	color: #010440;
+  color: #010440;
 }
 textarea.form-control {
-	height: 300px;
-	resize: none;
+  height: 300px;
+  resize: none;
 }
 
 .btn-lg,
 .btn-group-lg > .btn {
-	padding: 10px 25px;
-	font-size: 13px;
-	background: #010440;
-	color: #fff;
+  padding: 10px 25px;
+  font-size: 13px;
+  background: #010440;
+  color: #fff;
 }
 
 #send:hover {
-	color: #fff;
-	font-weight: bold;
-	background: #ff530d;
+  color: #fff;
+  font-weight: bold;
+  background: #ff530d;
 }
 
 /* ---------------------------------------------- /*
@@ -442,13 +443,13 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #filler-pic3 {
-	height: 600px;
-	margin: 0 -15px;
-	background: url("../img/chris-karidis-313612.jpg") no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  height: 600px;
+  margin: 0 -15px;
+  background: url('../img/chris-karidis-313612.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* ---------------------------------------------- /*
@@ -456,78 +457,78 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #slide5 {
-	color: #fff;
-	background: #010a26;
-	padding: 90px 0 0 0;
-	background-size: cover;
-	margin-bottom: 0;
+  color: #fff;
+  background: #010a26;
+  padding: 90px 0 0 0;
+  background-size: cover;
+  margin-bottom: 0;
 }
 
 #tools,
 #skills {
-	color: #ff530d;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: block;
-	font-size: 30px;
-	font-weight: 800;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 5px;
+  color: #ff530d;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
 }
 
 #skills {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .technologies {
-	color: #fff;
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-style: normal;
-	font-size: 18px;
-	font-weight: normal;
+  color: #fff;
+  font-family: Raleway, 'Times New Roman', Times, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 #chat-row {
-	margin: 20px 0 100px 0;
+  margin: 20px 0 100px 0;
 }
 .chart {
-	display: inline-block;
-	height: 140px;
-	margin: 30px 0;
-	position: relative;
-	text-align: center;
-	width: 140px;
+  display: inline-block;
+  height: 140px;
+  margin: 30px 0;
+  position: relative;
+  text-align: center;
+  width: 140px;
 }
 .chart canvas {
-	left: 0;
-	position: absolute;
-	top: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .text-center {
-	font-size: 18px;
-	margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .percent {
-	display: inline-block;
-	font-size: 25px;
-	font-weight: 300;
-	line-height: 140px;
-	z-index: 2;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 140px;
+  z-index: 2;
 }
 .percent:after {
-	content: "%";
-	font-size: 50%;
-	margin-left: 0.1em;
+  content: '%';
+  font-size: 50%;
+  margin-left: 0.1em;
 }
 
 #tools-hr,
 #skills-hr {
-	width: 50px;
-	margin: 20px auto;
-	opacity: 0.5;
+  width: 50px;
+  margin: 20px auto;
+  opacity: 0.5;
 }
 
 /* ---------------------------------------------- /*
@@ -535,1003 +536,1011 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	color: #fff;
-	background: #010a26;
-	background-size: cover;
-	padding-bottom: 10px;
-	margin-bottom: 0;
+  color: #fff;
+  background: #010a26;
+  background-size: cover;
+  padding-bottom: 10px;
+  margin-bottom: 0;
 }
 
 #social {
-	min-height: 68px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 30px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 #social ul {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 #social ul li:first-child {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 #social-icons {
-	font-size: 30px;
-	color: #aab3b6;
+  font-size: 30px;
+  color: #aab3b6;
 }
 
 .fa-stack-overflow {
-	margin-top: -2px;
+  margin-top: -2px;
 }
 
 .fa-twitter {
-	padding-top: 2px;
+  padding-top: 2px;
 }
 
 #copyright {
-	height: 30px;
-	text-align: right;
-	border-right: 1px solid #ff530d;
-	padding: 3px 20px;
+  height: 30px;
+  text-align: right;
+  border-right: 1px solid #ff530d;
+  padding: 3px 20px;
 }
 
 #copyright-text {
-	margin-right: 2px;
+  margin-right: 2px;
 }
 
 #picture-credit {
-	height: 30px;
+  height: 30px;
 }
 
 /*******************************************Media Queries************************************************/
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 1124px) {
-	/* ---------------------------------------------- /*
+@media (max-width: 1180px) {
+  /* ---------------------------------------------- /*
 	 * Global
 	/* ---------------------------------------------- */
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Header
 	/* ---------------------------------------------- */
 
-	#logo1 {
-		font-size: 1em;
-		text-align: center;
-		margin-right: 10px;
-	}
+  #logo1 {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 10px;
+  }
 
-	#logo,
-	#navbar {
-		height: 100%;
-	}
-	#logo {
-		padding: 0 0 0 50px;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-	#navbar {
-		padding: 5px 50px 5px 0;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-	#logo a {
-		color: #010440;
-		text-decoration: none;
-		font-size: 30px;
-	}
+  #logo,
+  #navbar {
+    height: 100%;
+  }
+  #logo {
+    padding: 0 0 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #navbar {
+    padding: 5px 50px 5px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #logo a {
+    color: #010440;
+    text-decoration: none;
+    font-size: 30px;
+  }
 
-	ul {
-		padding-left: 0;
-	}
+  ul {
+    padding-left: 0;
+  }
 
-	li {
-		margin-top: 9px;
-		float: left;
-		padding-left: 21px;
-	}
+  li {
+    margin-top: 9px;
+    float: left;
+    padding-left: 21px;
+  }
 
-	#navbar li a {
-		color: #010440;
-		font-size: 16px;
-		text-decoration: none;
-	}
-	#navbar li a.active {
-		color: #ff530d;
-		opacity: 1;
-	}
-	#navbar li a:hover {
-		color: #ff530d;
-		opacity: 1;
-	}
+  #navbar li a {
+    color: #010440;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  #navbar li a.active {
+    color: #ff530d;
+    opacity: 1;
+  }
+  #navbar li a:hover {
+    color: #ff530d;
+    opacity: 1;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Landing Page
 	/* ---------------------------------------------- */
 
-	#intro-container {
-		margin-top: -100px;
-	}
+  #intro-container {
+    margin-top: -100px;
+  }
 
-	#intro {
-		font-size: 4.2em;
-		margin-bottom: 100px;
-	}
+  #intro {
+    font-size: 4.2em;
+    margin-bottom: 100px;
+  }
 
-	#job-title {
-		font-size: 2em;
-		margin-bottom: 20px;
-	}
+  #job-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
 
-	#availability {
-		padding-top: 0;
-		font-size: 1em;
-		margin-top: 100px;
-		margin-bottom: -100px;
-	}
+  #availability {
+    padding-top: 0;
+    font-size: 1em;
+    margin-top: 100px;
+    margin-bottom: -100px;
+  }
 
-	#intro-scroll {
-		margin-bottom: 50px;
-	}
+  #intro-scroll {
+    margin-bottom: 50px;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * About
 	/* ---------------------------------------------- */
 
-	#slide2 {
-		background-color: #fff;
-		color: #010440;
-		margin: 0 auto;
-		padding: 80px 0;
-	}
+  #slide2 {
+    background-color: #fff;
+    color: #010440;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
 
-	#about {
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #about {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#story,
-	#passion {
-		min-height: 350px;
-		font-size: 18px;
-		padding-top: 40px;
-	}
-	#story {
-		border-right: none;
-	}
+  #story,
+  #passion {
+    min-height: 350px;
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  #story {
+    border-right: none;
+  }
 
-	#story {
-		border-right: 1px solid #f5f5f5;
-	}
+  #story {
+    border-right: 1px solid #f5f5f5;
+  }
 
-	#story-logo,
-	#passion-logo {
-		text-align: center;
-	}
+  #story-logo,
+  #passion-logo {
+    text-align: center;
+  }
 
-	#story-para,
-	#passion-para {
-		min-height: 350px;
-	}
+  #story-para,
+  #passion-para {
+    min-height: 350px;
+  }
 
-	.material-icons {
-		font-size: 40px;
-	}
+  .material-icons {
+    font-size: 40px;
+  }
 
-	hr {
-		width: 100px;
-		margin: 0 auto;
-	}
-	/* ---------------------------------------------- /*
+  hr {
+    width: 100px;
+    margin: 0 auto;
+  }
+  /* ---------------------------------------------- /*
 	 * Porfolio
 	/* ---------------------------------------------- */
 
-	#slide3 {
-		color: #010440;
-		padding: 80px 0 20px 0;
-		background-size: cover;
-	}
+  #slide3 {
+    color: #010440;
+    padding: 80px 0 20px 0;
+    background-size: cover;
+  }
 
-	#project {
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #project {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	/* ---------------------------------------------- /*
+  .card-content {
+    min-height: 166px;
+  }
+
+  /* ---------------------------------------------- /*
 	 * Contact
 	/* ---------------------------------------------- */
 
-	#slide4 {
-		background-color: #f5f5f5;
-		color: #010440;
-		padding: 80px 0;
-	}
+  #slide4 {
+    background-color: #f5f5f5;
+    color: #010440;
+    padding: 80px 0;
+  }
 
-	#contact {
-		text-align: center;
-		margin-top: 20px;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #contact {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#chat-hr {
-		width: 100px;
-		margin-bottom: 15px;
-	}
-	/* ---------------------------------------------- /*
+  #chat-hr {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  /* ---------------------------------------------- /*
 	 * Skills
 	/* ---------------------------------------------- */
 
-	#slide5 {
-		padding: 80px 0 0 0;
-	}
+  #slide5 {
+    padding: 80px 0 0 0;
+  }
 
-	#tools,
-	#skills {
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #tools,
+  #skills {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#skills {
-		margin-bottom: 0;
-	}
+  #skills {
+    margin-bottom: 0;
+  }
 
-	.technologies {
-		font-family: Raleway, "Times New Roman", Times, sans-serif;
-		font-style: normal;
-		font-size: 18px;
-		font-weight: normal;
-	}
+  .technologies {
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+  }
 
-	.chart {
-		display: inline-block;
-		height: 140px;
-		margin: 30px 0;
-		position: relative;
-		text-align: center;
-		width: 140px;
-	}
-	.chart canvas {
-		left: 0;
-		position: absolute;
-		top: 0;
-	}
+  .chart {
+    display: inline-block;
+    height: 140px;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+  }
+  .chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 
-	.text-center {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
+  .text-center {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-	.percent {
-		display: inline-block;
-		font-size: 25px;
-		font-weight: 300;
-		line-height: 140px;
-		z-index: 2;
-	}
-	.percent:after {
-		content: "%";
-		font-size: 50%;
-		margin-left: 0.1em;
-	}
+  .percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+  }
+  .percent:after {
+    content: '%';
+    font-size: 50%;
+    margin-left: 0.1em;
+  }
 
-	#tools-hr,
-	#skills-hr {
-		color: #ff530d;
-		width: 50px;
-		margin: 20px auto;
-		opacity: 0.5;
-	}
+  #tools-hr,
+  #skills-hr {
+    color: #ff530d;
+    width: 50px;
+    margin: 20px auto;
+    opacity: 0.5;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Footer
 	/* ---------------------------------------------- */
 
-	#footer {
-		color: #c7c7c7;
-		background: #010a26;
-		background-size: cover;
-	}
+  #footer {
+    color: #c7c7c7;
+    background: #010a26;
+    background-size: cover;
+  }
 
-	#copyright {
-		height: 30px;
-		text-align: right;
-		padding: 3px 20px;
-	}
+  #copyright {
+    height: 30px;
+    text-align: right;
+    padding: 3px 20px;
+  }
 
-	#picture-credit {
-		height: 30px;
-	}
+  #picture-credit {
+    height: 30px;
+  }
 }
 
 /* Small devices (landscape phones, less than 769px)*/
 @media (max-width: 768px) {
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Global
 	/* ---------------------------------------------- */
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Header
 	/* ---------------------------------------------- */
 
-	#logo1 {
-		font-size: 0.8em;
-		text-align: center;
-		margin-right: 10px;
-	}
+  #logo1 {
+    font-size: 0.8em;
+    text-align: center;
+    margin-right: 10px;
+  }
 
-	#logo,
-	#navbar {
-		height: 100%;
-	}
-	#logo {
-		padding: 0 0 0 1px;
-		margin-left: 40px;
-		margin-right: -80px;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-	#navbar {
-		padding: 13px 1px 10px 0;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-	#logo a {
-		color: #010440;
-		text-decoration: none;
-		font-size: 22px;
-	}
+  #logo,
+  #navbar {
+    height: 100%;
+  }
+  #logo {
+    padding: 0 0 0 1px;
+    margin-left: 40px;
+    margin-right: -80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #navbar {
+    padding: 13px 1px 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #logo a {
+    color: #010440;
+    text-decoration: none;
+    font-size: 22px;
+  }
 
-	ul {
-		padding-left: 0;
-	}
+  ul {
+    padding-left: 0;
+  }
 
-	li {
-		margin-top: 9px;
-		float: left;
-		padding-left: 21px;
-	}
+  li {
+    margin-top: 9px;
+    float: left;
+    padding-left: 21px;
+  }
 
-	#navbar li a {
-		color: #010440;
-		font-size: 14px;
-		text-decoration: none;
-	}
-	#navbar li a.active {
-		color: #ff530d;
-		opacity: 1;
-	}
-	#navbar li a:hover {
-		color: #ff530d;
-		opacity: 1;
-	}
+  #navbar li a {
+    color: #010440;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  #navbar li a.active {
+    color: #ff530d;
+    opacity: 1;
+  }
+  #navbar li a:hover {
+    color: #ff530d;
+    opacity: 1;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Landing Page
 	/* ---------------------------------------------- */
 
-	#intro-container {
-		margin-top: 0;
-	}
+  #intro-container {
+    margin-top: 0;
+  }
 
-	#intro {
-		font-size: 3em;
-		margin-top: 20px;
-		margin-bottom: 0;
-	}
+  #intro {
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 
-	#job-title {
-		font-size: 1.5em;
-		margin-bottom: 10px;
-		margin-top: 10px;
-	}
+  #job-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 
-	#availability {
-		padding-top: 0;
-		font-size: 0.8em;
-		margin-top: 0;
-		margin-bottom: 20px;
-	}
+  #availability {
+    padding-top: 0;
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-	#intro-scroll {
-		margin-bottom: 0;
-	}
+  #intro-scroll {
+    margin-bottom: 0;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * About
 	/* ---------------------------------------------- */
 
-	#slide2 {
-		background-color: #fff;
-		color: #010440;
-		margin: 0 auto;
-		padding: 100px 0 0 0;
-	}
+  #slide2 {
+    background-color: #fff;
+    color: #010440;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+  }
 
-	#about {
-		text-align: center;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #about {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#story,
-	#passion {
-		min-height: 350px;
-		font-size: 18px;
-		padding-top: 0;
-	}
-	#story {
-		border-right: none;
-	}
+  #story,
+  #passion {
+    min-height: 350px;
+    font-size: 18px;
+    padding-top: 0;
+  }
+  #story {
+    border-right: none;
+  }
 
-	#story-logo,
-	#passion-logo {
-		text-align: center;
-	}
+  #story-logo,
+  #passion-logo {
+    text-align: center;
+  }
 
-	#story-para,
-	#passion-para {
-		min-height: auto;
-		border: 1px solid #f5f5f5;
-	}
+  #story-para,
+  #passion-para {
+    min-height: auto;
+    border: 1px solid #f5f5f5;
+  }
 
-	#about-hr {
-		visibility: hidden;
-	}
+  #about-hr {
+    visibility: hidden;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Filler Picture 1
 	/* ---------------------------------------------- */
 
-	#filler-pic1 {
-		position: relative;
-		bottom: -40px;
-		height: 300px;
-		margin: 0 -15px;
-		background: url("../img/dustin-lee-19667.jpg") no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
+  #filler-pic1 {
+    position: relative;
+    bottom: -40px;
+    height: 300px;
+    margin: 0 -15px;
+    background: url('../img/dustin-lee-19667.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Porfolio
 	/* ---------------------------------------------- */
 
-	#slide3 {
-		background-color: #fff;
-		color: #010440;
-		padding: 120px 0 20px 0;
-		background-size: cover;
-	}
+  #slide3 {
+    background-color: #fff;
+    color: #010440;
+    padding: 120px 0 20px 0;
+    background-size: cover;
+  }
 
-	#project {
-		font-size: 2em;
-		margin-top: 20px;
-		text-align: center;
-		margin-top: 0;
-	}
+  #project {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
 
-	#outcome-icon1 {
-		font-size: 60px;
-		color: #ff530d;
-	}
+  .card-content {
+    min-height: 0;
+  }
 
-	#project-hr {
-		margin-bottom: 30px;
-	}
+  #outcome-icon1 {
+    font-size: 60px;
+    color: #ff530d;
+  }
 
-	#myCarousel {
-		height: auto;
-		overflow: hidden;
-	}
+  #project-hr {
+    margin-bottom: 30px;
+  }
 
-	/* ---------------------------------------------- /*
+  #myCarousel {
+    height: auto;
+    overflow: hidden;
+  }
+
+  /* ---------------------------------------------- /*
 	 * Filler Picture 2
 	/* ---------------------------------------------- */
 
-	#filler-pic2 {
-		height: 400px;
-		margin: 0 -15px;
-		margin-bottom: -100px;
-		background: url("../img/chat.jpg") no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
+  #filler-pic2 {
+    height: 400px;
+    margin: 0 -15px;
+    margin-bottom: -100px;
+    background: url('../img/chat.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Contact
 	/* ---------------------------------------------- */
 
-	#slide4 {
-		background-color: #f5f5f5;
-		color: #010440;
-		padding: 100px 0 0 0;
-	}
+  #slide4 {
+    background-color: #f5f5f5;
+    color: #010440;
+    padding: 100px 0 0 0;
+  }
 
-	#contact {
-		text-align: center;
-		display: block;
-		font-size: 2em;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #contact {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#chat-hr {
-		width: 100px;
-	}
+  #chat-hr {
+    width: 100px;
+  }
 
-	textarea.form-control {
-		height: 100px;
-	}
+  textarea.form-control {
+    height: 100px;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Filler Picture 3
 	/* ---------------------------------------------- */
 
-	#filler-pic3 {
-		height: 300px;
-		margin: 0 -15px;
-		background: url("../img/chris-karidis-313612.jpg") no-repeat center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
+  #filler-pic3 {
+    height: 300px;
+    margin: 0 -15px;
+    background: url('../img/chris-karidis-313612.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Skills
 	/* ---------------------------------------------- */
 
-	#slide5 {
-		padding: 100px 0 0 0;
-	}
+  #slide5 {
+    padding: 100px 0 0 0;
+  }
 
-	#tools,
-	#skills {
-		text-align: center;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #tools,
+  #skills {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#skills {
-		margin-bottom: 0;
-	}
+  #skills {
+    margin-bottom: 0;
+  }
 
-	.technologies {
-		font-family: Raleway, "Times New Roman", Times, sans-serif;
-		font-style: normal;
-		font-size: 18px;
-		font-weight: normal;
-	}
+  .technologies {
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+  }
 
-	.chart {
-		display: inline-block;
-		height: 140px;
-		margin: 30px 0;
-		position: relative;
-		text-align: center;
-		width: 140px;
-	}
-	.chart canvas {
-		left: 0;
-		position: absolute;
-		top: 0;
-	}
+  .chart {
+    display: inline-block;
+    height: 140px;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+  }
+  .chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 
-	.text-center {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
+  .text-center {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-	.percent {
-		display: inline-block;
-		font-size: 25px;
-		font-weight: 300;
-		line-height: 140px;
-		z-index: 2;
-	}
-	.percent:after {
-		content: "%";
-		font-size: 50%;
-		margin-left: 0.1em;
-	}
-	#tools-hr,
-	#skills-hr {
-		color: #ff530d;
-		width: 50px;
-		margin: 20px auto;
-		opacity: 0.5;
-	}
+  .percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+  }
+  .percent:after {
+    content: '%';
+    font-size: 50%;
+    margin-left: 0.1em;
+  }
+  #tools-hr,
+  #skills-hr {
+    color: #ff530d;
+    width: 50px;
+    margin: 20px auto;
+    opacity: 0.5;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Footer
 	/* ---------------------------------------------- */
 
-	#footer {
-		color: #fff;
-		background: #010a26;
-		background-size: cover;
-	}
+  #footer {
+    color: #fff;
+    background: #010a26;
+    background-size: cover;
+  }
 
-	#social-icons {
-		font-size: 24px;
-	}
+  #social-icons {
+    font-size: 24px;
+  }
 
-	#copyright {
-		height: 30px;
-		text-align: right;
-		padding: 3px 20px;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-	}
+  #copyright {
+    height: 30px;
+    text-align: right;
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-	#copyright-text {
-		margin-right: 4px;
-	}
+  #copyright-text {
+    margin-right: 4px;
+  }
 
-	#picture-credit {
-		height: 30px;
-		display: flex;
-		align-items: center;
-		padding-left: 20px;
-	}
+  #picture-credit {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
 
-	#elena {
-		margin-right: 5px;
-	}
+  #elena {
+    margin-right: 5px;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Global
 	/* ---------------------------------------------- */
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Header
 	/* ---------------------------------------------- */
-	#header {
-		height: 120px;
-		position: fixed;
-		z-index: 100;
-		border-bottom: 1px solid #f5f5f5;
-	}
-	#intro {
-		margin-bottom: 100px;
-	}
+  #header {
+    height: 120px;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  #intro {
+    margin-bottom: 100px;
+  }
 
-	#logo1 {
-		font-size: 1em;
-		text-align: center;
-		margin-right: 8px;
-	}
+  #logo1 {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 8px;
+  }
 
-	#initial {
-		margin-left: 0;
-	}
+  #initial {
+    margin-left: 0;
+  }
 
-	#logo,
-	#navbar {
-		height: 50%;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#logo {
-		width: 100%;
-		padding-top: 5px;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	#navbar {
-		padding-bottom: 10px;
-		width: 100%;
-		background: #fff;
-		border-bottom: 1px solid #f5f5f5;
-	}
-	#logo a {
-		color: #010440;
-		text-decoration: none;
-		font-size: 26px;
-	}
+  #logo,
+  #navbar {
+    height: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo {
+    width: 100%;
+    padding-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #navbar {
+    padding-bottom: 10px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  #logo a {
+    color: #010440;
+    text-decoration: none;
+    font-size: 26px;
+  }
 
-	ul {
-		padding: 0;
-	}
-	li:first-child {
-		padding: 0;
-	}
+  ul {
+    padding: 0;
+  }
+  li:first-child {
+    padding: 0;
+  }
 
-	li {
-		margin-top: 10px;
-		float: left;
-		padding-left: 21px;
-	}
+  li {
+    margin-top: 10px;
+    float: left;
+    padding-left: 21px;
+  }
 
-	#navbar li a {
-		color: #010440;
-		font-size: 16px;
-		text-decoration: none;
-	}
-	#navbar li a.active {
-		color: #ff530d;
-		opacity: 1;
-	}
-	#navbar li a:hover {
-		color: #ff530d;
-		opacity: 1;
-	}
+  #navbar li a {
+    color: #010440;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  #navbar li a.active {
+    color: #ff530d;
+    opacity: 1;
+  }
+  #navbar li a:hover {
+    color: #ff530d;
+    opacity: 1;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Landing Page
 	/* ---------------------------------------------- */
 
-	#intro {
-		font-size: 1.7em;
-		margin-top: 0;
-	}
+  #intro {
+    font-size: 1.7em;
+    margin-top: 0;
+  }
 
-	#job-title {
-		font-size: 1.3em;
-	}
+  #job-title {
+    font-size: 1.3em;
+  }
 
-	#availability {
-		margin-top: 90px;
-		font-size: 0.7em;
-	}
+  #availability {
+    margin-top: 90px;
+    font-size: 0.7em;
+  }
 
-	#intro-scroll {
-		margin-bottom: 50px;
-	}
+  #intro-scroll {
+    margin-bottom: 50px;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * About
 	/* ---------------------------------------------- */
 
-	#slide2 {
-		background-color: #fff;
-		color: #010440;
-		margin: 0 auto;
-		padding: 140px 0 0 0;
-	}
+  #slide2 {
+    background-color: #fff;
+    color: #010440;
+    margin: 0 auto;
+    padding: 140px 0 0 0;
+  }
 
-	#about {
-		text-align: center;
-		margin-bottom: 20px;
-		margin-top: 0;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #about {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#story,
-	#passion {
-		min-height: 350px;
-		font-size: 18px;
-		padding-top: 20px;
-	}
-	#story {
-		border-right: none;
-	}
+  #story,
+  #passion {
+    min-height: 350px;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  #story {
+    border-right: none;
+  }
 
-	#story-logo,
-	#passion-logo {
-		text-align: center;
-	}
+  #story-logo,
+  #passion-logo {
+    text-align: center;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Filler Picture 1
 	/* ---------------------------------------------- */
 
-	#filler-pic1 {
-		bottom: -50px;
-	}
+  #filler-pic1 {
+    bottom: -50px;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Porfolio
 	/* ---------------------------------------------- */
 
-	#slide3 {
-		background-color: #fff;
-		color: #010440;
-		padding: 140px 0 0 0;
-		background-size: cover;
-	}
+  #slide3 {
+    background-color: #fff;
+    color: #010440;
+    padding: 140px 0 0 0;
+    background-size: cover;
+  }
 
-	#project {
-		text-align: center;
-		margin-bottom: 20px;
-	}
+  #project {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-	#project-hr {
-		margin-bottom: 30px;
-	}
+  #project-hr {
+    margin-bottom: 30px;
+  }
 
-	#business_center {
-		vertical-align: middle;
-		font-size: 60px;
-		margin-left: 10px;
-		color: #ff530d;
-	}
+  #business_center {
+    vertical-align: middle;
+    font-size: 60px;
+    margin-left: 10px;
+    color: #ff530d;
+  }
 
-	#portfolio-cards {
-		margin: 10px;
-	}
+  #portfolio-cards {
+    margin: 10px;
+  }
 
-	.right {
-		color: #010440;
-	}
+  .right {
+    color: #010440;
+  }
 
-	#card-content {
-		font-size: 18px;
-	}
-	/* ---------------------------------------------- /*
+  #card-content {
+    font-size: 18px;
+  }
+  /* ---------------------------------------------- /*
 	 * Contact
 	/* ---------------------------------------------- */
 
-	#slide4 {
-		background-color: #fff;
-		color: #010440;
-		padding: 140px 0 0 0;
-	}
+  #slide4 {
+    background-color: #fff;
+    color: #010440;
+    padding: 140px 0 0 0;
+  }
 
-	#contact {
-		text-align: center;
-		margin-top: 0;
-		display: block;
-		font-size: 2em;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #contact {
+    text-align: center;
+    margin-top: 0;
+    display: block;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	textarea.form-control {
-		height: 280px;
-	}
-	/* ---------------------------------------------- /*
+  textarea.form-control {
+    height: 280px;
+  }
+  /* ---------------------------------------------- /*
 	 * Skills
 	/* ---------------------------------------------- */
 
-	#slide5 {
-		padding: 140px 0 0 0;
-	}
+  #slide5 {
+    padding: 140px 0 0 0;
+  }
 
-	#tools,
-	#skills {
-		text-align: center;
-		margin-bottom: 20px;
-		margin-top: 0;
-		display: block;
-		font-size: 30px;
-		font-weight: 800;
-		font-family: "Raleway", sans-serif;
-		letter-spacing: 5px;
-	}
+  #tools,
+  #skills {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+  }
 
-	#skills {
-		margin-bottom: 0;
-		margin-top: 20px;
-	}
+  #skills {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
 
-	.technologies {
-		font-family: Raleway, "Times New Roman", Times, sans-serif;
-		font-style: normal;
-		font-size: 18px;
-		font-weight: normal;
-	}
+  .technologies {
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+  }
 
-	.chart {
-		display: inline-block;
-		height: 140px;
-		margin: 30px 0;
-		position: relative;
-		text-align: center;
-		width: 140px;
-	}
-	.chart canvas {
-		left: 0;
-		position: absolute;
-		top: 0;
-	}
+  .chart {
+    display: inline-block;
+    height: 140px;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+  }
+  .chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 
-	.text-center {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
+  .text-center {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-	.percent {
-		display: inline-block;
-		font-size: 25px;
-		font-weight: 300;
-		line-height: 140px;
-		z-index: 2;
-	}
-	.percent:after {
-		content: "%";
-		font-size: 50%;
-		margin-left: 0.1em;
-	}
-	#tools-hr,
-	#skills-hr {
-		color: #ff530d;
-		width: 50px;
-		margin: 20px auto;
-		opacity: 0.5;
-	}
+  .percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+  }
+  .percent:after {
+    content: '%';
+    font-size: 50%;
+    margin-left: 0.1em;
+  }
+  #tools-hr,
+  #skills-hr {
+    color: #ff530d;
+    width: 50px;
+    margin: 20px auto;
+    opacity: 0.5;
+  }
 
-	/* ---------------------------------------------- /*
+  /* ---------------------------------------------- /*
 	 * Footer
 	/* ---------------------------------------------- */
 
-	#footer {
-		min-height: 100px;
-		color: #fff;
-		background: #010a26;
-		background-size: cover;
-	}
+  #footer {
+    min-height: 100px;
+    color: #fff;
+    background: #010a26;
+    background-size: cover;
+  }
 
-	#copyright-text {
-		display: none;
-	}
+  #copyright-text {
+    display: none;
+  }
 
-	#elena {
-		display: none;
-	}
+  #elena {
+    display: none;
+  }
 
-	#copyright {
-		text-align: left;
-		font-size: 0.8em;
-		height: 30px;
-		padding: 10px 10px 10px 22px;
-	}
+  #copyright {
+    text-align: left;
+    font-size: 0.8em;
+    height: 30px;
+    padding: 10px 10px 10px 22px;
+  }
 
-	#picture-credit {
-		font-size: 0.8em;
-		display: inline-flex;
-		align-items: center;
-		padding-left: 10px;
-	}
+  #picture-credit {
+    font-size: 0.8em;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+  }
 }
